@@ -3,7 +3,9 @@ services:
   web:
     build:
       context: .
+    image: 92455890/tabula-atinaserver:1.0.0
     command: "jruby -G -r jbundler -S rackup -p 9292 -o 0.0.0.0 config.ru"
+    container_name: tabula-atinaserver
     ports:
       - 9292:9292
 volumes:
