@@ -4720,7 +4720,7 @@ tbody.collapse.in {
   display: inline-block;
 }
 .breadcrumb > li + li:before {
-  content: "/Â ";
+  content: "/Â ";
   padding: 0 5px;
   color: #ccc;
 }
@@ -5457,6 +5457,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-heading > .dropdown .dropdown-toggle {
   color: inherit;
+  display:none;
 }
 
 .panel-title {
@@ -7142,8 +7143,8 @@ button.close {
 /* rectangularSelector.js classes */
 .selection-box, .table-region {
   position: absolute;
-  border: 1px dashed rgba(255, 87, 0, 0.8);
-  background: rgba(255, 87, 0, 0.2);
+  border: 1px dashed rgba(255, 232, 219, 0.8);
+  background: rgbargba(255, 232, 219, 0.8);
   box-sizing: border-box;
 }
 .selection-box:hover, .table-region:hover {
@@ -7591,8 +7592,8 @@ form {
   cursor: crosshair;
 }
 #main-pane .selection-box, #main-pane .table-region {
-  border: 3px dashed rgba(224, 1, 1, 0.6);
-  background: rgba(224, 1, 1, 0.2);
+  border: 1px rgba(255, 232, 219, 0.8);
+  background: rgba(255, 232, 219, 0.8);
 }
 #main-pane .selection-box .selection-panel, #main-pane .table-region .selection-panel {
   display: none;

@@ -784,24 +784,7 @@ Tabula.PageView = Backbone.View.extend({ // one per page of the PDF
       selection.remove();
     }
 
-    // if this is not the last pager
-    if(this.model != this.model.collection.last()) {
-      var but_id = this.model.get('number') + '-' + selection.id;  //create a "Repeat this Selection" button
-      var button = $('<div class="btn-group repeat-lassos-group" id="'+but_id+'"> \
-      <button type="button" class="btn btn-default repeat-lassos">Repeat this Selection</button>\
-      <button type="button" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">\
-        <span class="caret"></span>\
-        <span class="sr-only">Toggle Dropdown</span>\
-      </button>\
-      <ul class="dropdown-menu">\
-        <li><a class="dropdown-item repeat-lassos" href="#">Repeat to All Pages</a></li>\
-        <li><a class="dropdown-item repeat-lasso-once" href="#">Repeat to Next Page</a></li>\
-      </ul>\
-    </div>');
-      button.find("button").data("selectionId", selection.id);
-      button.find("a").data("selectionId", selection.id);
-      selection.$el.append(button);
-    }
+     
 
     Tabula.pdf_view.components['control_panel'].render(); // deals with buttons that need blurred out if there's zero selections, etc.
   },
